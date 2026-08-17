@@ -1,0 +1,27 @@
+{
+    "type": "Lean",
+    "sort": "Raw",
+    "steps": 50,
+    "penalty": "1:5",
+    "instruction": "theorem ST_2 (α : Ordinal) (h₁ : IsLimit α) (h₂ : α < ω_ 1) : α.cof = ℵ := by sorry",
+    "version": "0.1",
+    "initialize": [
+        {
+            "func": "import",
+            "libs": ["Mathlib"]
+        },
+        {
+            "func": "open",
+            "libs": ["Ordinal", "Cardinal"]
+        },
+        {
+            "func": "query",
+            "expr": "theorem ST_2 (α : Ordinal) (h₁ : IsLimit α) (h₂ : α < ω_ 1) : α.cof = ℵ := by sorry"
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "placeholder"
+        }
+    ]
+}

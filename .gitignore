@@ -1,0 +1,19 @@
+/.temp
+/.in
+/.out
+
+.vscode
+.VSCodeCounter
+.DS_Store
+__pycache__/
+*.py[cod]
+
+/logs/*
+/temp/*
+/vmware/*
+
+.vmware_lck
+.vmware_vms
+
+# Local ScienceBoard endpoint and API credentials.
+/scienceboard.local.env

@@ -1,0 +1,42 @@
+{
+    "type": "GrassGIS",
+    "sort": "VM",
+    "steps": 10,
+    "instruction": "Label each province names in Piemonte using horizontally centered Ubuntu:Bold font in Grass GIS.",
+    "version": "0.1",
+    "snapshot": "sci_bench",
+    "initialize": [
+        {
+            "func": "execute",
+            "command": "rm -rf /home/user/grassdata/*/*/.gislock",
+            "shell": true
+        },
+        {
+            "func": "launch",
+            "wait": 5,
+            "command": "gnome-terminal -- /bin/bash -ic \"FLASK_PORT=8000 grass --gui /home/user/grassdata/world_latlong_wgs84/PERMANENT\"",
+            "shell": true
+        },
+        {
+            "func": "map",
+            "grassdb": "/home/user/grassdata",
+            "location": "grassdata_piemonte_utm32n_wgs84_grass7",
+            "mapset": "PERMANENT"
+        },
+        {
+            "func": "layer",
+            "wait": 5,
+            "query": {
+                "name": "boundary_region"
+            }
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "info",
+            "key": "lambda dump: (lambda good_opts: any([good_opts({param.get('name'): param.get('value') for param in (data.get('params') or [])}) for win in dump.get('windows', []) if win.get('name') == 'boundary_region@PERMANENT' and win.get('_checked') is not False for data in (win.get('_data') or []) if isinstance(data, dict) and data.get('params')]) or any([isinstance(cmd, list) and len(cmd) > 1 and cmd[0] == 'd.vect' and ((isinstance(cmd[1], dict) and str(cmd[1].get('map', '')).split('@')[0] == 'boundary_region' and good_opts(cmd[1])) or (any([isinstance(part, str) and part.startswith('map=') and part.split('=', 1)[1].split('@')[0] == 'boundary_region' for part in cmd[1:]]) and good_opts(dict([part.split('=', 1) for part in cmd[1:] if isinstance(part, str) and '=' in part])))) for cmd in ([item.get('cmd') for item in dump.get('layers', []) if item.get('name') == 'boundary_region@PERMANENT' and item.get('hidden') is not True] + [data.get('cmd') for win in dump.get('windows', []) if win.get('name') == 'boundary_region@PERMANENT' and win.get('_checked') is not False for data in (win.get('_data') or []) if isinstance(data, dict)])]))(lambda opts: str(opts.get('attribute_column', '')).strip() == 'NOME' and str(opts.get('font', '')).strip() == 'Ubuntu:Bold' and str(opts.get('xref', '')).strip() == 'center')",
+            "value": true,
+            "pred": "lambda key, value: key == value"
+        }
+    ]
+}

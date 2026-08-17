@@ -1,0 +1,23 @@
+{
+    "type": "Lean",
+    "sort": "Raw",
+    "steps": 50,
+    "penalty": "1:5",
+    "instruction": "theorem TP_3 [TopologicalSpace X] [TopologicalSpace Y] (f : X → Y) (Z : Set X) (h₁ : Continuous f) (h₂ : IsConnected Z) : IsConnected {y : Y | ∃ z ∈ Z, f z = y} := by sorry",
+    "version": "0.1",
+    "initialize": [
+        {
+            "func": "import",
+            "libs": ["Mathlib"]
+        },
+        {
+            "func": "query",
+            "expr": "theorem TP_3 [TopologicalSpace X] [TopologicalSpace Y] (f : X → Y) (Z : Set X) (h₁ : Continuous f) (h₂ : IsConnected Z) : IsConnected {y : Y | ∃ z ∈ Z, f z = y} := by sorry"
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "placeholder"
+        }
+    ]
+}

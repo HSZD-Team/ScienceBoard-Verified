@@ -1,0 +1,42 @@
+{
+    "type": "GrassGIS",
+    "sort": "VM",
+    "steps": 5,
+    "instruction": "Change the area color to gray, whose RGB = (191, 191, 191) in Grass GIS.",
+    "version": "0.1",
+    "snapshot": "sci_bench",
+    "initialize": [
+        {
+            "func": "execute",
+            "command": "rm -rf /home/user/grassdata/*/*/.gislock",
+            "shell": true
+        },
+        {
+            "func": "launch",
+            "wait": 5,
+            "command": "gnome-terminal -- /bin/bash -ic \"FLASK_PORT=8000 grass --gui /home/user/grassdata/world_latlong_wgs84/PERMANENT\"",
+            "shell": true
+        },
+        {
+            "func": "map",
+            "grassdb": "/home/user/grassdata",
+            "location": "grassdata_piemonte_utm32n_wgs84_grass7",
+            "mapset": "PERMANENT"
+        },
+        {
+            "func": "layer",
+            "wait": 5,
+            "query": {
+                "name": "boundary_region"
+            }
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "info",
+            "key": "lambda dump: (lambda good_color: any([param.get('name') == 'fill_color' and good_color(param.get('value', '')) for win in dump.get('windows', []) if win.get('name') == 'boundary_region@PERMANENT' and win.get('_checked') is not False for data in (win.get('_data') or []) if isinstance(data, dict) for param in (data.get('params') or [])]) or any([isinstance(cmd, list) and len(cmd) > 1 and cmd[0] == 'd.vect' and ((isinstance(cmd[1], dict) and str(cmd[1].get('map', '')).startswith('boundary_region') and (good_color(cmd[1].get('fill_color', '')) or good_color(cmd[1].get('fcolor', '')))) or (any([isinstance(part, str) and part.startswith('map=boundary_region') for part in cmd[1:]]) and any([isinstance(part, str) and (part.startswith('fill_color=') or part.startswith('fcolor=')) and good_color(part.split('=', 1)[1]) for part in cmd[1:]]))) for cmd in ([item.get('cmd') for item in dump.get('layers', []) if item.get('name') == 'boundary_region@PERMANENT' and item.get('hidden') is not True] + [data.get('cmd') for win in dump.get('windows', []) if win.get('name') == 'boundary_region@PERMANENT' and win.get('_checked') is not False for data in (win.get('_data') or []) if isinstance(data, dict)])]))(lambda value: str(value).split(':')[:3] == ['191', '191', '191'] and (len(str(value).split(':')) == 3 or str(value).split(':')[3] == '255'))",
+            "value": true,
+            "pred": "lambda key, value: key == value"
+        }
+    ]
+}

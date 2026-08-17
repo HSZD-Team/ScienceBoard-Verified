@@ -1,0 +1,50 @@
+{
+    "type": "KAlgebra",
+    "sort": "VM",
+    "steps": 5,
+    "instruction": "Given that f(x) = ln(x + 1) + (x^2 - x), plot f'(x) in KAlgebra.",
+    "version": "0.1",
+    "snapshot": "sci_bench",
+    "initialize": [
+        {
+            "func": "launch",
+            "wait": 2.5,
+            "command": "LD_LIBRARY_PATH=/home/user/6.5.0/gcc_64/lib /app/bin/kalgebra «PORTLIKE»",
+            "shell": true
+        },
+        {
+            "func": "tab",
+            "index": 1
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "eqn",
+            "key": [
+                [-0.75, 1.5],
+                [-0.5, 0],
+                [-0.5, -2.8],
+                [0, 0],
+                [0, -1],
+                [1, 1.5],
+                [1, 2],
+                [3, 5.25],
+                [3, 5.6],
+                [7, 13.125]
+            ],
+            "value": {
+                "(-0.75, 1.5)": true,
+                "(-0.5, 0)": true,
+                "(-0.5, -2.8)": false,
+                "(0, 0)": true,
+                "(0, -1)": false,
+                "(1, 1.5)": true,
+                "(1, 2)": false,
+                "(3, 5.25)": true,
+                "(3, 5.6)": false,
+                "(7, 13.125)": true
+            }
+        }
+    ],
+    "ans": "diff(ln(x+1)+x^2-x:x)"
+}

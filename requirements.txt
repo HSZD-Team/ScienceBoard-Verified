@@ -1,0 +1,2 @@
+requests==2.31.0
+desktop-env==0.1.22

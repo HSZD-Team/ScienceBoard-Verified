@@ -1,0 +1,5 @@
+Package: sci-bench-cache
+Version: 0.1
+Maintainer: Ichinoe
+Architecture: all
+Description: Cache files for SciBench

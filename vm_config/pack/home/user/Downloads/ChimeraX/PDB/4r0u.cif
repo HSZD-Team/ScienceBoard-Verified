@@ -1,0 +1,855 @@
+data_4R0U
+# 
+_entry.id   4R0U 
+# 
+_audit_conform.dict_name       mmcif_pdbx.dic 
+_audit_conform.dict_version    5.389 
+_audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
+# 
+loop_
+_database_2.database_id 
+_database_2.database_code 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   4R0U         pdb_00004r0u 10.2210/pdb4r0u/pdb 
+RCSB  RCSB086757   ?            ?                   
+WWPDB D_1000086757 ?            ?                   
+# 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2014-12-17 
+2 'Structure model' 1 1 2015-01-14 
+3 'Structure model' 1 2 2024-02-28 
+4 'Structure model' 1 3 2024-04-03 
+# 
+_pdbx_audit_revision_details.ordinal             1 
+_pdbx_audit_revision_details.revision_ordinal    1 
+_pdbx_audit_revision_details.data_content_type   'Structure model' 
+_pdbx_audit_revision_details.provider            repository 
+_pdbx_audit_revision_details.type                'Initial release' 
+_pdbx_audit_revision_details.description         ? 
+_pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references'    
+2 3 'Structure model' 'Data collection'        
+3 3 'Structure model' 'Database references'    
+4 4 'Structure model' 'Refinement description' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 3 'Structure model' chem_comp_atom                
+2 3 'Structure model' chem_comp_bond                
+3 3 'Structure model' database_2                    
+4 4 'Structure model' pdbx_initial_refinement_model 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 3 'Structure model' '_database_2.pdbx_DOI'                
+2 3 'Structure model' '_database_2.pdbx_database_accession' 
+# 
+_pdbx_database_status.entry_id                        4R0U 
+_pdbx_database_status.status_code                     REL 
+_pdbx_database_status.methods_development_category    ? 
+_pdbx_database_status.deposit_site                    RCSB 
+_pdbx_database_status.process_site                    RCSB 
+_pdbx_database_status.recvd_initial_deposition_date   2014-08-01 
+_pdbx_database_status.status_code_sf                  REL 
+_pdbx_database_status.status_code_mr                  ? 
+_pdbx_database_status.SG_entry                        ? 
+_pdbx_database_status.status_code_cs                  ? 
+_pdbx_database_status.pdb_format_compatible           Y 
+_pdbx_database_status.status_code_nmr_data            ? 
+# 
+loop_
+_audit_author.name 
+_audit_author.pdbx_ordinal 
+'Ivanova, M.I.'   1 
+'Eisenberg, D.S.' 2 
+'Sawaya, M.R.'    3 
+# 
+_citation.id                        primary 
+_citation.title                     'Structure-based design of functional amyloid materials.' 
+_citation.journal_abbrev            J.Am.Chem.Soc. 
+_citation.journal_volume            136 
+_citation.page_first                18044 
+_citation.page_last                 18051 
+_citation.year                      2014 
+_citation.journal_id_ASTM           JACSAT 
+_citation.country                   US 
+_citation.journal_id_ISSN           0002-7863 
+_citation.journal_id_CSD            0004 
+_citation.book_publisher            ? 
+_citation.pdbx_database_id_PubMed   25474758 
+_citation.pdbx_database_id_DOI      10.1021/ja509648u 
+# 
+loop_
+_citation_author.citation_id 
+_citation_author.name 
+_citation_author.ordinal 
+_citation_author.identifier_ORCID 
+primary 'Li, D.'          1  ? 
+primary 'Jones, E.M.'     2  ? 
+primary 'Sawaya, M.R.'    3  ? 
+primary 'Furukawa, H.'    4  ? 
+primary 'Luo, F.'         5  ? 
+primary 'Ivanova, M.'     6  ? 
+primary 'Sievers, S.A.'   7  ? 
+primary 'Wang, W.'        8  ? 
+primary 'Yaghi, O.M.'     9  ? 
+primary 'Liu, C.'         10 ? 
+primary 'Eisenberg, D.S.' 11 ? 
+# 
+loop_
+_entity.id 
+_entity.type 
+_entity.src_method 
+_entity.pdbx_description 
+_entity.formula_weight 
+_entity.pdbx_number_of_molecules 
+_entity.pdbx_ec 
+_entity.pdbx_mutation 
+_entity.pdbx_fragment 
+_entity.details 
+1 polymer syn Alpha-synuclein 617.692 1 ? ? 'UNP RESIDUES 72-78' ? 
+2 water   nat water           18.015  7 ? ? ?                    ? 
+# 
+_entity_name_com.entity_id   1 
+_entity_name_com.name        'Non-A beta component of AD amyloid, Non-A4 component of amyloid precursor, NACP' 
+# 
+_entity_poly.entity_id                      1 
+_entity_poly.type                           'polypeptide(L)' 
+_entity_poly.nstd_linkage                   no 
+_entity_poly.nstd_monomer                   no 
+_entity_poly.pdbx_seq_one_letter_code       TGVTAVA 
+_entity_poly.pdbx_seq_one_letter_code_can   TGVTAVA 
+_entity_poly.pdbx_strand_id                 A 
+_entity_poly.pdbx_target_identifier         ? 
+# 
+_pdbx_entity_nonpoly.entity_id   2 
+_pdbx_entity_nonpoly.name        water 
+_pdbx_entity_nonpoly.comp_id     HOH 
+# 
+loop_
+_entity_poly_seq.entity_id 
+_entity_poly_seq.num 
+_entity_poly_seq.mon_id 
+_entity_poly_seq.hetero 
+1 1 THR n 
+1 2 GLY n 
+1 3 VAL n 
+1 4 THR n 
+1 5 ALA n 
+1 6 VAL n 
+1 7 ALA n 
+# 
+_pdbx_entity_src_syn.entity_id              1 
+_pdbx_entity_src_syn.pdbx_src_id            1 
+_pdbx_entity_src_syn.pdbx_alt_source_flag   sample 
+_pdbx_entity_src_syn.pdbx_beg_seq_num       ? 
+_pdbx_entity_src_syn.pdbx_end_seq_num       ? 
+_pdbx_entity_src_syn.organism_scientific    'Homo sapiens' 
+_pdbx_entity_src_syn.organism_common_name   human 
+_pdbx_entity_src_syn.ncbi_taxonomy_id       9606 
+_pdbx_entity_src_syn.details                'TGVTAVA (residues 72-78) from Human alpha-synuclein, synthesized' 
+# 
+loop_
+_chem_comp.id 
+_chem_comp.type 
+_chem_comp.mon_nstd_flag 
+_chem_comp.name 
+_chem_comp.pdbx_synonyms 
+_chem_comp.formula 
+_chem_comp.formula_weight 
+ALA 'L-peptide linking' y ALANINE   ? 'C3 H7 N O2'  89.093  
+GLY 'peptide linking'   y GLYCINE   ? 'C2 H5 N O2'  75.067  
+HOH non-polymer         . WATER     ? 'H2 O'        18.015  
+THR 'L-peptide linking' y THREONINE ? 'C4 H9 N O3'  119.119 
+VAL 'L-peptide linking' y VALINE    ? 'C5 H11 N O2' 117.146 
+# 
+loop_
+_pdbx_poly_seq_scheme.asym_id 
+_pdbx_poly_seq_scheme.entity_id 
+_pdbx_poly_seq_scheme.seq_id 
+_pdbx_poly_seq_scheme.mon_id 
+_pdbx_poly_seq_scheme.ndb_seq_num 
+_pdbx_poly_seq_scheme.pdb_seq_num 
+_pdbx_poly_seq_scheme.auth_seq_num 
+_pdbx_poly_seq_scheme.pdb_mon_id 
+_pdbx_poly_seq_scheme.auth_mon_id 
+_pdbx_poly_seq_scheme.pdb_strand_id 
+_pdbx_poly_seq_scheme.pdb_ins_code 
+_pdbx_poly_seq_scheme.hetero 
+A 1 1 THR 1 1 1 THR THR A . n 
+A 1 2 GLY 2 2 2 GLY GLY A . n 
+A 1 3 VAL 3 3 3 VAL VAL A . n 
+A 1 4 THR 4 4 4 THR THR A . n 
+A 1 5 ALA 5 5 5 ALA ALA A . n 
+A 1 6 VAL 6 6 6 VAL VAL A . n 
+A 1 7 ALA 7 7 7 ALA ALA A . n 
+# 
+loop_
+_pdbx_nonpoly_scheme.asym_id 
+_pdbx_nonpoly_scheme.entity_id 
+_pdbx_nonpoly_scheme.mon_id 
+_pdbx_nonpoly_scheme.ndb_seq_num 
+_pdbx_nonpoly_scheme.pdb_seq_num 
+_pdbx_nonpoly_scheme.auth_seq_num 
+_pdbx_nonpoly_scheme.pdb_mon_id 
+_pdbx_nonpoly_scheme.auth_mon_id 
+_pdbx_nonpoly_scheme.pdb_strand_id 
+_pdbx_nonpoly_scheme.pdb_ins_code 
+B 2 HOH 1 101 1 HOH HOH A . 
+B 2 HOH 2 102 2 HOH HOH A . 
+B 2 HOH 3 103 3 HOH HOH A . 
+B 2 HOH 4 104 4 HOH HOH A . 
+B 2 HOH 5 105 5 HOH HOH A . 
+B 2 HOH 6 106 6 HOH HOH A . 
+B 2 HOH 7 107 7 HOH HOH A . 
+# 
+loop_
+_software.pdbx_ordinal 
+_software.name 
+_software.version 
+_software.date 
+_software.type 
+_software.contact_author 
+_software.contact_author_email 
+_software.classification 
+_software.location 
+_software.language 
+_software.citation_id 
+1 DENZO       .        ?                          program 'Zbyszek Otwinowski' hkl@hkl-xray.com            'data reduction'  
+http://www.hkl-xray.com/                     ?          ? 
+2 SCALEPACK   .        ?                          program 'Zbyszek Otwinowski' hkl@hkl-xray.com            'data scaling'    
+http://www.hkl-xray.com/                     ?          ? 
+3 PHASER      1.3.2    'Wed Feb 15 11:59:26 2006' program 'Randy J. Read'      cimr-phaser@lists.cam.ac.uk phasing           
+http://www-structmed.cimr.cam.ac.uk/phaser/  ?          ? 
+4 REFMAC      5.8.0073 ?                          program 'Garib N. Murshudov' garib@ysbl.york.ac.uk       refinement        
+http://www.ccp4.ac.uk/dist/html/refmac5.html Fortran_77 ? 
+5 PDB_EXTRACT 3.14     'Dec. 10, 2013'            package PDB                  deposit@deposit.rcsb.org    'data extraction' 
+http://sw-tools.pdb.org/apps/PDB_EXTRACT/    C++        ? 
+# 
+_cell.length_a           15.584 
+_cell.length_b           4.742 
+_cell.length_c           25.806 
+_cell.angle_alpha        90.000 
+_cell.angle_beta         98.960 
+_cell.angle_gamma        90.000 
+_cell.entry_id           4R0U 
+_cell.pdbx_unique_axis   ? 
+_cell.Z_PDB              2 
+_cell.length_a_esd       ? 
+_cell.length_b_esd       ? 
+_cell.length_c_esd       ? 
+_cell.angle_alpha_esd    ? 
+_cell.angle_beta_esd     ? 
+_cell.angle_gamma_esd    ? 
+# 
+_symmetry.space_group_name_H-M             'P 1 21 1' 
+_symmetry.entry_id                         4R0U 
+_symmetry.Int_Tables_number                4 
+_symmetry.pdbx_full_space_group_name_H-M   ? 
+_symmetry.cell_setting                     ? 
+_symmetry.space_group_name_Hall            ? 
+# 
+_exptl.crystals_number   1 
+_exptl.entry_id          4R0U 
+_exptl.method            'X-RAY DIFFRACTION' 
+# 
+_exptl_crystal.id                    1 
+_exptl_crystal.pdbx_mosaicity        0.600 
+_exptl_crystal.pdbx_mosaicity_esd    ? 
+_exptl_crystal.density_Matthews      1.52 
+_exptl_crystal.density_diffrn        ? 
+_exptl_crystal.density_meas          ? 
+_exptl_crystal.density_meas_temp     ? 
+_exptl_crystal.density_percent_sol   19.34 
+_exptl_crystal.size_max              ? 
+_exptl_crystal.size_mid              ? 
+_exptl_crystal.size_min              ? 
+_exptl_crystal.size_rad              ? 
+_exptl_crystal.description           ? 
+_exptl_crystal.F_000                 ? 
+_exptl_crystal.preparation           ? 
+# 
+_exptl_crystal_grow.crystal_id      1 
+_exptl_crystal_grow.method          'VAPOR DIFFUSION, HANGING DROP' 
+_exptl_crystal_grow.pH              ? 
+_exptl_crystal_grow.temp            298 
+_exptl_crystal_grow.pdbx_details    '0.2M magnesium formate, vapor diffusion, hanging drop, temperature 298K' 
+_exptl_crystal_grow.temp_details    ? 
+_exptl_crystal_grow.pdbx_pH_range   ? 
+# 
+_diffrn.id                     1 
+_diffrn.ambient_temp           100 
+_diffrn.ambient_temp_details   ? 
+_diffrn.crystal_id             1 
+# 
+_diffrn_detector.diffrn_id              1 
+_diffrn_detector.detector               CCD 
+_diffrn_detector.type                   'MAR CCD 165 mm' 
+_diffrn_detector.pdbx_collection_date   2007-07-13 
+_diffrn_detector.details                ? 
+# 
+_diffrn_radiation.diffrn_id                        1 
+_diffrn_radiation.pdbx_diffrn_protocol             'SINGLE WAVELENGTH' 
+_diffrn_radiation.monochromator                    ? 
+_diffrn_radiation.wavelength_id                    1 
+_diffrn_radiation.pdbx_monochromatic_or_laue_m_l   M 
+_diffrn_radiation.pdbx_scattering_type             x-ray 
+# 
+_diffrn_radiation_wavelength.id           1 
+_diffrn_radiation_wavelength.wavelength   0.895432 
+_diffrn_radiation_wavelength.wt           1.0 
+# 
+_diffrn_source.diffrn_id                   1 
+_diffrn_source.source                      SYNCHROTRON 
+_diffrn_source.type                        'ESRF BEAMLINE ID13' 
+_diffrn_source.pdbx_wavelength_list        0.895432 
+_diffrn_source.pdbx_wavelength             ? 
+_diffrn_source.pdbx_synchrotron_site       ESRF 
+_diffrn_source.pdbx_synchrotron_beamline   ID13 
+# 
+_reflns.entry_id                     4R0U 
+_reflns.d_resolution_high            1.38 
+_reflns.d_resolution_low             90.000 
+_reflns.number_obs                   798 
+_reflns.pdbx_Rmerge_I_obs            0.151 
+_reflns.pdbx_netI_over_sigmaI        8.400 
+_reflns.pdbx_chi_squared             1.125 
+_reflns.pdbx_redundancy              3.400 
+_reflns.percent_possible_obs         83.800 
+_reflns.observed_criterion_sigma_F   ? 
+_reflns.observed_criterion_sigma_I   -3.0 
+_reflns.number_all                   798 
+_reflns.pdbx_Rsym_value              ? 
+_reflns.B_iso_Wilson_estimate        18.5 
+_reflns.R_free_details               ? 
+_reflns.limit_h_max                  ? 
+_reflns.limit_h_min                  ? 
+_reflns.limit_k_max                  ? 
+_reflns.limit_k_min                  ? 
+_reflns.limit_l_max                  ? 
+_reflns.limit_l_min                  ? 
+_reflns.observed_criterion_F_max     ? 
+_reflns.observed_criterion_F_min     ? 
+_reflns.pdbx_scaling_rejects         ? 
+_reflns.pdbx_ordinal                 1 
+_reflns.pdbx_diffrn_id               1 
+# 
+loop_
+_reflns_shell.d_res_high 
+_reflns_shell.d_res_low 
+_reflns_shell.number_measured_obs 
+_reflns_shell.number_measured_all 
+_reflns_shell.number_unique_obs 
+_reflns_shell.pdbx_rejects 
+_reflns_shell.Rmerge_I_obs 
+_reflns_shell.meanI_over_sigI_obs 
+_reflns_shell.pdbx_Rsym_value 
+_reflns_shell.pdbx_chi_squared 
+_reflns_shell.pdbx_redundancy 
+_reflns_shell.percent_possible_obs 
+_reflns_shell.pdbx_netI_over_sigmaI_obs 
+_reflns_shell.number_possible 
+_reflns_shell.number_unique_all 
+_reflns_shell.Rmerge_F_all 
+_reflns_shell.Rmerge_F_obs 
+_reflns_shell.Rmerge_I_all 
+_reflns_shell.meanI_over_sigI_all 
+_reflns_shell.percent_possible_all 
+_reflns_shell.pdbx_Rrim_I_all 
+_reflns_shell.pdbx_Rpim_I_all 
+_reflns_shell.pdbx_ordinal 
+_reflns_shell.pdbx_diffrn_id 
+1.400 1.510  ? ? ? 0 0.229 ? ? 1.017 1.800 ? ? ? 115 ? ? ? ? 61.200 ? ? 1 1 
+1.510 1.660  ? ? ? 0 0.329 ? ? 1.107 2.400 ? ? ? 136 ? ? ? ? 71.200 ? ? 2 1 
+1.660 1.900  ? ? ? 0 0.262 ? ? 1.123 3.600 ? ? ? 155 ? ? ? ? 94.500 ? ? 3 1 
+1.900 2.390  ? ? ? 0 0.205 ? ? 1.091 4.300 ? ? ? 197 ? ? ? ? 96.600 ? ? 4 1 
+2.390 90.000 ? ? ? 0 0.130 ? ? 1.185 4.100 ? ? ? 195 ? ? ? ? 95.100 ? ? 5 1 
+# 
+_refine.entry_id                                 4R0U 
+_refine.ls_d_res_high                            1.3800 
+_refine.ls_d_res_low                             25.4900 
+_refine.pdbx_ls_sigma_F                          0.000 
+_refine.pdbx_data_cutoff_high_absF               ? 
+_refine.pdbx_data_cutoff_low_absF                ? 
+_refine.ls_percent_reflns_obs                    86.1800 
+_refine.ls_number_reflns_obs                     798 
+_refine.ls_number_reflns_all                     798 
+_refine.pdbx_ls_cross_valid_method               THROUGHOUT 
+_refine.pdbx_R_Free_selection_details            RANDOM 
+_refine.details                                  
+'HYDROGENS HAVE BEEN ADDED IN THE RIDING POSITIONS U VALUES      : REFINED INDIVIDUALLY' 
+_refine.ls_R_factor_all                          0.2045 
+_refine.ls_R_factor_obs                          0.2045 
+_refine.ls_R_factor_R_work                       0.2027 
+_refine.ls_wR_factor_R_work                      0.2378 
+_refine.ls_R_factor_R_free                       0.2175 
+_refine.ls_wR_factor_R_free                      0.2528 
+_refine.ls_percent_reflns_R_free                 11.3000 
+_refine.ls_number_reflns_R_free                  90 
+_refine.ls_R_factor_R_free_error                 ? 
+_refine.B_iso_mean                               16.6240 
+_refine.solvent_model_param_bsol                 ? 
+_refine.solvent_model_param_ksol                 ? 
+_refine.pdbx_isotropic_thermal_model             ? 
+_refine.aniso_B[1][1]                            0.3400 
+_refine.aniso_B[2][2]                            -0.2100 
+_refine.aniso_B[3][3]                            -0.1900 
+_refine.aniso_B[1][2]                            -0.0000 
+_refine.aniso_B[1][3]                            0.2200 
+_refine.aniso_B[2][3]                            -0.0000 
+_refine.correlation_coeff_Fo_to_Fc               0.9650 
+_refine.correlation_coeff_Fo_to_Fc_free          0.9670 
+_refine.overall_SU_R_Cruickshank_DPI             0.0960 
+_refine.overall_SU_R_free                        0.0873 
+_refine.pdbx_overall_ESU_R                       0.0960 
+_refine.pdbx_overall_ESU_R_Free                  0.0870 
+_refine.overall_SU_ML                            0.0770 
+_refine.overall_SU_B                             2.3360 
+_refine.solvent_model_details                    MASK 
+_refine.pdbx_solvent_vdw_probe_radii             1.4000 
+_refine.pdbx_solvent_ion_probe_radii             0.8000 
+_refine.pdbx_solvent_shrinkage_radii             0.8000 
+_refine.ls_number_parameters                     ? 
+_refine.ls_number_restraints                     ? 
+_refine.pdbx_starting_model                      'ideal beta strand' 
+_refine.pdbx_method_to_determine_struct          'MOLECULAR REPLACEMENT' 
+_refine.pdbx_stereochemistry_target_values       'MAXIMUM LIKELIHOOD' 
+_refine.pdbx_stereochem_target_val_spec_case     ? 
+_refine.overall_FOM_work_R_set                   0.7067 
+_refine.B_iso_max                                41.770 
+_refine.B_iso_min                                8.240 
+_refine.pdbx_overall_phase_error                 ? 
+_refine.occupancy_max                            ? 
+_refine.occupancy_min                            ? 
+_refine.pdbx_ls_sigma_I                          ? 
+_refine.ls_redundancy_reflns_obs                 ? 
+_refine.ls_R_factor_R_free_error_details         ? 
+_refine.pdbx_data_cutoff_high_rms_absF           ? 
+_refine.overall_FOM_free_R_set                   ? 
+_refine.pdbx_diffrn_id                           1 
+_refine.pdbx_refine_id                           'X-RAY DIFFRACTION' 
+_refine.pdbx_TLS_residual_ADP_flag               ? 
+_refine.pdbx_overall_SU_R_free_Cruickshank_DPI   ? 
+_refine.pdbx_overall_SU_R_Blow_DPI               ? 
+_refine.pdbx_overall_SU_R_free_Blow_DPI          ? 
+# 
+_refine_hist.pdbx_refine_id                   'X-RAY DIFFRACTION' 
+_refine_hist.cycle_id                         LAST 
+_refine_hist.pdbx_number_atoms_protein        43 
+_refine_hist.pdbx_number_atoms_nucleic_acid   0 
+_refine_hist.pdbx_number_atoms_ligand         0 
+_refine_hist.number_atoms_solvent             7 
+_refine_hist.number_atoms_total               50 
+_refine_hist.d_res_high                       1.3800 
+_refine_hist.d_res_low                        25.4900 
+# 
+loop_
+_refine_ls_restr.type 
+_refine_ls_restr.number 
+_refine_ls_restr.dev_ideal 
+_refine_ls_restr.dev_ideal_target 
+_refine_ls_restr.weight 
+_refine_ls_restr.pdbx_restraint_function 
+_refine_ls_restr.pdbx_refine_id 
+r_bond_refined_d       42  0.010 0.020  ? ? 'X-RAY DIFFRACTION' 
+r_bond_other_d         45  0.002 0.020  ? ? 'X-RAY DIFFRACTION' 
+r_angle_refined_deg    58  1.312 1.974  ? ? 'X-RAY DIFFRACTION' 
+r_angle_other_deg      101 0.544 3.000  ? ? 'X-RAY DIFFRACTION' 
+r_dihedral_angle_1_deg 6   4.887 5.000  ? ? 'X-RAY DIFFRACTION' 
+r_dihedral_angle_3_deg 4   3.831 15.000 ? ? 'X-RAY DIFFRACTION' 
+r_chiral_restr         10  0.060 0.200  ? ? 'X-RAY DIFFRACTION' 
+r_gen_planes_refined   46  0.002 0.020  ? ? 'X-RAY DIFFRACTION' 
+r_gen_planes_other     6   0.000 0.020  ? ? 'X-RAY DIFFRACTION' 
+r_mcbond_it            27  3.692 2.027  ? ? 'X-RAY DIFFRACTION' 
+r_mcbond_other         26  2.327 1.911  ? ? 'X-RAY DIFFRACTION' 
+r_mcangle_it           31  5.827 3.254  ? ? 'X-RAY DIFFRACTION' 
+# 
+_refine_ls_shell.d_res_high                       1.3800 
+_refine_ls_shell.d_res_low                        1.5420 
+_refine_ls_shell.pdbx_total_number_of_bins_used   5 
+_refine_ls_shell.percent_reflns_obs               68.9400 
+_refine_ls_shell.number_reflns_R_work             163 
+_refine_ls_shell.R_factor_all                     ? 
+_refine_ls_shell.R_factor_R_work                  0.3230 
+_refine_ls_shell.R_factor_R_free                  0.3460 
+_refine_ls_shell.percent_reflns_R_free            ? 
+_refine_ls_shell.number_reflns_R_free             19 
+_refine_ls_shell.R_factor_R_free_error            ? 
+_refine_ls_shell.number_reflns_all                182 
+_refine_ls_shell.number_reflns_obs                ? 
+_refine_ls_shell.pdbx_refine_id                   'X-RAY DIFFRACTION' 
+_refine_ls_shell.redundancy_reflns_obs            ? 
+# 
+_struct.entry_id                  4R0U 
+_struct.title                     'Tgvtava, an amyloid forming segment from alpha synuclein, residues 72-78' 
+_struct.pdbx_model_details        ? 
+_struct.pdbx_CASP_flag            ? 
+_struct.pdbx_model_type_details   ? 
+# 
+_struct_keywords.entry_id        4R0U 
+_struct_keywords.text            'amyloid-like protofibril, PROTEIN FIBRIL' 
+_struct_keywords.pdbx_keywords   'PROTEIN FIBRIL' 
+# 
+loop_
+_struct_asym.id 
+_struct_asym.pdbx_blank_PDB_chainid_flag 
+_struct_asym.pdbx_modified 
+_struct_asym.entity_id 
+_struct_asym.details 
+A N N 1 ? 
+B N N 2 ? 
+# 
+_struct_ref.id                         1 
+_struct_ref.db_name                    UNP 
+_struct_ref.db_code                    SYUA_HUMAN 
+_struct_ref.pdbx_db_accession          P37840 
+_struct_ref.entity_id                  1 
+_struct_ref.pdbx_seq_one_letter_code   TGVTAVA 
+_struct_ref.pdbx_align_begin           72 
+_struct_ref.pdbx_db_isoform            ? 
+# 
+_struct_ref_seq.align_id                      1 
+_struct_ref_seq.ref_id                        1 
+_struct_ref_seq.pdbx_PDB_id_code              4R0U 
+_struct_ref_seq.pdbx_strand_id                A 
+_struct_ref_seq.seq_align_beg                 1 
+_struct_ref_seq.pdbx_seq_align_beg_ins_code   ? 
+_struct_ref_seq.seq_align_end                 7 
+_struct_ref_seq.pdbx_seq_align_end_ins_code   ? 
+_struct_ref_seq.pdbx_db_accession             P37840 
+_struct_ref_seq.db_align_beg                  72 
+_struct_ref_seq.pdbx_db_align_beg_ins_code    ? 
+_struct_ref_seq.db_align_end                  78 
+_struct_ref_seq.pdbx_db_align_end_ins_code    ? 
+_struct_ref_seq.pdbx_auth_seq_align_beg       1 
+_struct_ref_seq.pdbx_auth_seq_align_end       7 
+# 
+_pdbx_struct_assembly.id                   1 
+_pdbx_struct_assembly.details              author_defined_assembly 
+_pdbx_struct_assembly.method_details       ? 
+_pdbx_struct_assembly.oligomeric_details   decameric 
+_pdbx_struct_assembly.oligomeric_count     10 
+# 
+_pdbx_struct_assembly_gen.assembly_id       1 
+_pdbx_struct_assembly_gen.oper_expression   1,2,3,4,5,6,7,8,9,10 
+_pdbx_struct_assembly_gen.asym_id_list      A,B 
+# 
+loop_
+_pdbx_struct_oper_list.id 
+_pdbx_struct_oper_list.type 
+_pdbx_struct_oper_list.name 
+_pdbx_struct_oper_list.symmetry_operation 
+_pdbx_struct_oper_list.matrix[1][1] 
+_pdbx_struct_oper_list.matrix[1][2] 
+_pdbx_struct_oper_list.matrix[1][3] 
+_pdbx_struct_oper_list.vector[1] 
+_pdbx_struct_oper_list.matrix[2][1] 
+_pdbx_struct_oper_list.matrix[2][2] 
+_pdbx_struct_oper_list.matrix[2][3] 
+_pdbx_struct_oper_list.vector[2] 
+_pdbx_struct_oper_list.matrix[3][1] 
+_pdbx_struct_oper_list.matrix[3][2] 
+_pdbx_struct_oper_list.matrix[3][3] 
+_pdbx_struct_oper_list.vector[3] 
+1  'identity operation'         1_555 x,y,z           1.0000000000  0.0000000000 0.0000000000 0.0000000000  0.0000000000 
+1.0000000000 0.0000000000 0.0000000000  0.0000000000 0.0000000000 1.0000000000  0.0000000000  
+2  'crystal symmetry operation' 1_535 x,y-2,z         1.0000000000  0.0000000000 0.0000000000 0.0000000000  0.0000000000 
+1.0000000000 0.0000000000 -9.4840000000 0.0000000000 0.0000000000 1.0000000000  0.0000000000  
+3  'crystal symmetry operation' 1_545 x,y-1,z         1.0000000000  0.0000000000 0.0000000000 0.0000000000  0.0000000000 
+1.0000000000 0.0000000000 -4.7420000000 0.0000000000 0.0000000000 1.0000000000  0.0000000000  
+4  'crystal symmetry operation' 1_565 x,y+1,z         1.0000000000  0.0000000000 0.0000000000 0.0000000000  0.0000000000 
+1.0000000000 0.0000000000 4.7420000000  0.0000000000 0.0000000000 1.0000000000  0.0000000000  
+5  'crystal symmetry operation' 1_575 x,y+2,z         1.0000000000  0.0000000000 0.0000000000 0.0000000000  0.0000000000 
+1.0000000000 0.0000000000 9.4840000000  0.0000000000 0.0000000000 1.0000000000  0.0000000000  
+6  'crystal symmetry operation' 2_656 -x+1,y+1/2,-z+1 -1.0000000000 0.0000000000 0.0000000000 11.5648473575 0.0000000000 
+1.0000000000 0.0000000000 2.3710000000  0.0000000000 0.0000000000 -1.0000000000 25.4910974271 
+7  'crystal symmetry operation' 2_636 -x+1,y-3/2,-z+1 -1.0000000000 0.0000000000 0.0000000000 11.5648473575 0.0000000000 
+1.0000000000 0.0000000000 -7.1130000000 0.0000000000 0.0000000000 -1.0000000000 25.4910974271 
+8  'crystal symmetry operation' 2_646 -x+1,y-1/2,-z+1 -1.0000000000 0.0000000000 0.0000000000 11.5648473575 0.0000000000 
+1.0000000000 0.0000000000 -2.3710000000 0.0000000000 0.0000000000 -1.0000000000 25.4910974271 
+9  'crystal symmetry operation' 2_666 -x+1,y+3/2,-z+1 -1.0000000000 0.0000000000 0.0000000000 11.5648473575 0.0000000000 
+1.0000000000 0.0000000000 7.1130000000  0.0000000000 0.0000000000 -1.0000000000 25.4910974271 
+10 'crystal symmetry operation' 2_676 -x+1,y+5/2,-z+1 -1.0000000000 0.0000000000 0.0000000000 11.5648473575 0.0000000000 
+1.0000000000 0.0000000000 11.8550000000 0.0000000000 0.0000000000 -1.0000000000 25.4910974271 
+# 
+_struct_biol.id        1 
+_struct_biol.details   
+;There are two choices of the biological unit. The first choice is a pair of indefinitely long beta sheets constructed from chain A and unit cell translations along the b direction (that is, the b direction corresponds to the fiber axis) (i.e. X,Y,Z; X,Y+1,Z; X,Y+2,Z; etc.) together with a symmetry related sheet formed from 1-X,Y+1/2,1-Z and its unit cell translations along the b direction (i.e. 1-x,y+3/2,1-z; 1-x,y+5/2,1-z, etc.). The second choice of biological unit is  a pair of beta sheets constructed from chain A and unit cell translations along the b direction (i.e. X,Y,Z; X,Y+1,Z; X,Y+2,Z; etc.) together with a symmetry related sheet formed from -X,1/2+Y,1-Z and its unit cell translations along the b direction (i.e. -x,y+3/2,1-z; -x,y+5/2,1-z; etc.). REMARK 350 displays 5 strands from both sheets for the first choice.
+;
+# 
+_pdbx_phasing_MR.entry_id                     4R0U 
+_pdbx_phasing_MR.method_rotation              ? 
+_pdbx_phasing_MR.method_translation           ? 
+_pdbx_phasing_MR.model_details                'Phaser MODE: MR_AUTO' 
+_pdbx_phasing_MR.R_factor                     ? 
+_pdbx_phasing_MR.R_rigid_body                 ? 
+_pdbx_phasing_MR.correlation_coeff_Fo_to_Fc   ? 
+_pdbx_phasing_MR.correlation_coeff_Io_to_Ic   ? 
+_pdbx_phasing_MR.d_res_high_rotation          1.600 
+_pdbx_phasing_MR.d_res_low_rotation           25.490 
+_pdbx_phasing_MR.d_res_high_translation       1.600 
+_pdbx_phasing_MR.d_res_low_translation        25.490 
+_pdbx_phasing_MR.packing                      ? 
+_pdbx_phasing_MR.reflns_percent_rotation      ? 
+_pdbx_phasing_MR.reflns_percent_translation   ? 
+_pdbx_phasing_MR.sigma_F_rotation             ? 
+_pdbx_phasing_MR.sigma_F_translation          ? 
+_pdbx_phasing_MR.sigma_I_rotation             ? 
+_pdbx_phasing_MR.sigma_I_translation          ? 
+# 
+_phasing.method   MR 
+# 
+loop_
+_chem_comp_atom.comp_id 
+_chem_comp_atom.atom_id 
+_chem_comp_atom.type_symbol 
+_chem_comp_atom.pdbx_aromatic_flag 
+_chem_comp_atom.pdbx_stereo_config 
+_chem_comp_atom.pdbx_ordinal 
+ALA N    N N N 1  
+ALA CA   C N S 2  
+ALA C    C N N 3  
+ALA O    O N N 4  
+ALA CB   C N N 5  
+ALA OXT  O N N 6  
+ALA H    H N N 7  
+ALA H2   H N N 8  
+ALA HA   H N N 9  
+ALA HB1  H N N 10 
+ALA HB2  H N N 11 
+ALA HB3  H N N 12 
+ALA HXT  H N N 13 
+GLY N    N N N 14 
+GLY CA   C N N 15 
+GLY C    C N N 16 
+GLY O    O N N 17 
+GLY OXT  O N N 18 
+GLY H    H N N 19 
+GLY H2   H N N 20 
+GLY HA2  H N N 21 
+GLY HA3  H N N 22 
+GLY HXT  H N N 23 
+HOH O    O N N 24 
+HOH H1   H N N 25 
+HOH H2   H N N 26 
+THR N    N N N 27 
+THR CA   C N S 28 
+THR C    C N N 29 
+THR O    O N N 30 
+THR CB   C N R 31 
+THR OG1  O N N 32 
+THR CG2  C N N 33 
+THR OXT  O N N 34 
+THR H    H N N 35 
+THR H2   H N N 36 
+THR HA   H N N 37 
+THR HB   H N N 38 
+THR HG1  H N N 39 
+THR HG21 H N N 40 
+THR HG22 H N N 41 
+THR HG23 H N N 42 
+THR HXT  H N N 43 
+VAL N    N N N 44 
+VAL CA   C N S 45 
+VAL C    C N N 46 
+VAL O    O N N 47 
+VAL CB   C N N 48 
+VAL CG1  C N N 49 
+VAL CG2  C N N 50 
+VAL OXT  O N N 51 
+VAL H    H N N 52 
+VAL H2   H N N 53 
+VAL HA   H N N 54 
+VAL HB   H N N 55 
+VAL HG11 H N N 56 
+VAL HG12 H N N 57 
+VAL HG13 H N N 58 
+VAL HG21 H N N 59 
+VAL HG22 H N N 60 
+VAL HG23 H N N 61 
+VAL HXT  H N N 62 
+# 
+loop_
+_chem_comp_bond.comp_id 
+_chem_comp_bond.atom_id_1 
+_chem_comp_bond.atom_id_2 
+_chem_comp_bond.value_order 
+_chem_comp_bond.pdbx_aromatic_flag 
+_chem_comp_bond.pdbx_stereo_config 
+_chem_comp_bond.pdbx_ordinal 
+ALA N   CA   sing N N 1  
+ALA N   H    sing N N 2  
+ALA N   H2   sing N N 3  
+ALA CA  C    sing N N 4  
+ALA CA  CB   sing N N 5  
+ALA CA  HA   sing N N 6  
+ALA C   O    doub N N 7  
+ALA C   OXT  sing N N 8  
+ALA CB  HB1  sing N N 9  
+ALA CB  HB2  sing N N 10 
+ALA CB  HB3  sing N N 11 
+ALA OXT HXT  sing N N 12 
+GLY N   CA   sing N N 13 
+GLY N   H    sing N N 14 
+GLY N   H2   sing N N 15 
+GLY CA  C    sing N N 16 
+GLY CA  HA2  sing N N 17 
+GLY CA  HA3  sing N N 18 
+GLY C   O    doub N N 19 
+GLY C   OXT  sing N N 20 
+GLY OXT HXT  sing N N 21 
+HOH O   H1   sing N N 22 
+HOH O   H2   sing N N 23 
+THR N   CA   sing N N 24 
+THR N   H    sing N N 25 
+THR N   H2   sing N N 26 
+THR CA  C    sing N N 27 
+THR CA  CB   sing N N 28 
+THR CA  HA   sing N N 29 
+THR C   O    doub N N 30 
+THR C   OXT  sing N N 31 
+THR CB  OG1  sing N N 32 
+THR CB  CG2  sing N N 33 
+THR CB  HB   sing N N 34 
+THR OG1 HG1  sing N N 35 
+THR CG2 HG21 sing N N 36 
+THR CG2 HG22 sing N N 37 
+THR CG2 HG23 sing N N 38 
+THR OXT HXT  sing N N 39 
+VAL N   CA   sing N N 40 
+VAL N   H    sing N N 41 
+VAL N   H2   sing N N 42 
+VAL CA  C    sing N N 43 
+VAL CA  CB   sing N N 44 
+VAL CA  HA   sing N N 45 
+VAL C   O    doub N N 46 
+VAL C   OXT  sing N N 47 
+VAL CB  CG1  sing N N 48 
+VAL CB  CG2  sing N N 49 
+VAL CB  HB   sing N N 50 
+VAL CG1 HG11 sing N N 51 
+VAL CG1 HG12 sing N N 52 
+VAL CG1 HG13 sing N N 53 
+VAL CG2 HG21 sing N N 54 
+VAL CG2 HG22 sing N N 55 
+VAL CG2 HG23 sing N N 56 
+VAL OXT HXT  sing N N 57 
+# 
+_pdbx_initial_refinement_model.accession_code   ? 
+_pdbx_initial_refinement_model.id               1 
+_pdbx_initial_refinement_model.entity_id_list   ? 
+_pdbx_initial_refinement_model.type             'in silico model' 
+_pdbx_initial_refinement_model.source_name      Other 
+_pdbx_initial_refinement_model.details          'ideal beta strand' 
+# 
+_atom_sites.entry_id                    4R0U 
+_atom_sites.fract_transf_matrix[1][1]   0.064168 
+_atom_sites.fract_transf_matrix[1][2]   0.000000 
+_atom_sites.fract_transf_matrix[1][3]   0.010112 
+_atom_sites.fract_transf_matrix[2][1]   -0.000000 
+_atom_sites.fract_transf_matrix[2][2]   0.210881 
+_atom_sites.fract_transf_matrix[2][3]   0.000000 
+_atom_sites.fract_transf_matrix[3][1]   0.000000 
+_atom_sites.fract_transf_matrix[3][2]   -0.000000 
+_atom_sites.fract_transf_matrix[3][3]   0.039229 
+_atom_sites.fract_transf_vector[1]      0.000000 
+_atom_sites.fract_transf_vector[2]      0.000000 
+_atom_sites.fract_transf_vector[3]      0.000000 
+# 
+loop_
+_atom_type.symbol 
+C 
+N 
+O 
+# 
+loop_
+_atom_site.group_PDB 
+_atom_site.id 
+_atom_site.type_symbol 
+_atom_site.label_atom_id 
+_atom_site.label_alt_id 
+_atom_site.label_comp_id 
+_atom_site.label_asym_id 
+_atom_site.label_entity_id 
+_atom_site.label_seq_id 
+_atom_site.pdbx_PDB_ins_code 
+_atom_site.Cartn_x 
+_atom_site.Cartn_y 
+_atom_site.Cartn_z 
+_atom_site.occupancy 
+_atom_site.B_iso_or_equiv 
+_atom_site.pdbx_formal_charge 
+_atom_site.auth_seq_id 
+_atom_site.auth_comp_id 
+_atom_site.auth_asym_id 
+_atom_site.auth_atom_id 
+_atom_site.pdbx_PDB_model_num 
+ATOM   1  N N   . THR A 1 1 ? -1.175 -1.984 5.065  1.00 31.90 ? 1   THR A N   1 
+ATOM   2  C CA  . THR A 1 1 ? -0.442 -1.664 3.800  1.00 28.55 ? 1   THR A CA  1 
+ATOM   3  C C   . THR A 1 1 ? 0.725  -0.766 4.131  1.00 25.57 ? 1   THR A C   1 
+ATOM   4  O O   . THR A 1 1 ? 0.606  0.129  4.975  1.00 26.52 ? 1   THR A O   1 
+ATOM   5  C CB  . THR A 1 1 ? -1.323 -0.912 2.785  1.00 30.97 ? 1   THR A CB  1 
+ATOM   6  O OG1 . THR A 1 1 ? -2.489 -1.691 2.472  1.00 25.85 ? 1   THR A OG1 1 
+ATOM   7  C CG2 . THR A 1 1 ? -0.535 -0.613 1.506  1.00 31.78 ? 1   THR A CG2 1 
+ATOM   8  N N   . GLY A 1 2 ? 1.839  -0.990 3.446  1.00 18.47 ? 2   GLY A N   1 
+ATOM   9  C CA  . GLY A 1 2 ? 3.065  -0.303 3.768  1.00 17.82 ? 2   GLY A CA  1 
+ATOM   10 C C   . GLY A 1 2 ? 3.651  -0.916 5.018  1.00 14.98 ? 2   GLY A C   1 
+ATOM   11 O O   . GLY A 1 2 ? 3.602  -2.132 5.204  1.00 17.04 ? 2   GLY A O   1 
+ATOM   12 N N   . VAL A 1 3 ? 4.191  -0.072 5.884  1.00 12.34 ? 3   VAL A N   1 
+ATOM   13 C CA  . VAL A 1 3 ? 4.831  -0.535 7.104  1.00 10.85 ? 3   VAL A CA  1 
+ATOM   14 C C   . VAL A 1 3 ? 4.083  0.069  8.266  1.00 10.31 ? 3   VAL A C   1 
+ATOM   15 O O   . VAL A 1 3 ? 3.989  1.288  8.375  1.00 10.77 ? 3   VAL A O   1 
+ATOM   16 C CB  . VAL A 1 3 ? 6.300  -0.119 7.123  1.00 11.88 ? 3   VAL A CB  1 
+ATOM   17 C CG1 . VAL A 1 3 ? 6.995  -0.639 8.358  1.00 12.70 ? 3   VAL A CG1 1 
+ATOM   18 C CG2 . VAL A 1 3 ? 6.981  -0.641 5.872  1.00 12.94 ? 3   VAL A CG2 1 
+ATOM   19 N N   . THR A 1 4 ? 3.545  -0.784 9.122  1.00 8.78  ? 4   THR A N   1 
+ATOM   20 C CA  . THR A 1 4 ? 2.661  -0.345 10.163 1.00 9.30  ? 4   THR A CA  1 
+ATOM   21 C C   . THR A 1 4 ? 3.038  -0.997 11.461 1.00 8.80  ? 4   THR A C   1 
+ATOM   22 O O   . THR A 1 4 ? 3.188  -2.210 11.534 1.00 9.31  ? 4   THR A O   1 
+ATOM   23 C CB  . THR A 1 4 ? 1.210  -0.709 9.820  1.00 10.28 ? 4   THR A CB  1 
+ATOM   24 O OG1 . THR A 1 4 ? 0.885  -0.143 8.550  1.00 15.19 ? 4   THR A OG1 1 
+ATOM   25 C CG2 . THR A 1 4 ? 0.250  -0.180 10.854 1.00 11.88 ? 4   THR A CG2 1 
+ATOM   26 N N   . ALA A 1 5 ? 3.197  -0.180 12.485 1.00 8.24  ? 5   ALA A N   1 
+ATOM   27 C CA  . ALA A 1 5 ? 3.483  -0.681 13.804 1.00 8.70  ? 5   ALA A CA  1 
+ATOM   28 C C   . ALA A 1 5 ? 2.476  -0.036 14.733 1.00 8.82  ? 5   ALA A C   1 
+ATOM   29 O O   . ALA A 1 5 ? 2.330  1.179  14.740 1.00 8.97  ? 5   ALA A O   1 
+ATOM   30 C CB  . ALA A 1 5 ? 4.914  -0.337 14.200 1.00 9.63  ? 5   ALA A CB  1 
+ATOM   31 N N   . VAL A 1 6 ? 1.779  -0.860 15.500 1.00 9.67  ? 6   VAL A N   1 
+ATOM   32 C CA  . VAL A 1 6 ? 0.747  -0.403 16.419 1.00 10.56 ? 6   VAL A CA  1 
+ATOM   33 C C   . VAL A 1 6 ? 0.972  -1.064 17.762 1.00 13.04 ? 6   VAL A C   1 
+ATOM   34 O O   . VAL A 1 6 ? 1.025  -2.274 17.841 1.00 13.74 ? 6   VAL A O   1 
+ATOM   35 C CB  . VAL A 1 6 ? -0.651 -0.798 15.921 1.00 11.93 ? 6   VAL A CB  1 
+ATOM   36 C CG1 . VAL A 1 6 ? -1.725 -0.264 16.861 1.00 14.13 ? 6   VAL A CG1 1 
+ATOM   37 C CG2 . VAL A 1 6 ? -0.874 -0.291 14.511 1.00 11.70 ? 6   VAL A CG2 1 
+ATOM   38 N N   . ALA A 1 7 ? 1.111  -0.286 18.825 1.00 16.98 ? 7   ALA A N   1 
+ATOM   39 C CA  . ALA A 1 7 ? 1.355  -0.884 20.153 1.00 21.40 ? 7   ALA A CA  1 
+ATOM   40 C C   . ALA A 1 7 ? 0.088  -1.484 20.771 1.00 28.45 ? 7   ALA A C   1 
+ATOM   41 O O   . ALA A 1 7 ? 0.126  -2.064 21.867 1.00 41.77 ? 7   ALA A O   1 
+ATOM   42 C CB  . ALA A 1 7 ? 2.002  0.114  21.100 1.00 28.04 ? 7   ALA A CB  1 
+ATOM   43 O OXT . ALA A 1 7 ? -0.998 -1.446 20.187 1.00 26.66 ? 7   ALA A OXT 1 
+HETATM 44 O O   . HOH B 2 . ? 1.096  2.123  6.990  1.00 15.46 ? 101 HOH A O   1 
+HETATM 45 O O   . HOH B 2 . ? 2.890  -2.582 1.283  1.00 19.26 ? 102 HOH A O   1 
+HETATM 46 O O   . HOH B 2 . ? 5.705  -2.678 2.820  1.00 19.31 ? 103 HOH A O   1 
+HETATM 47 O O   . HOH B 2 . ? 6.840  -0.231 2.170  1.00 26.87 ? 104 HOH A O   1 
+HETATM 48 O O   . HOH B 2 . ? -6.061 -2.599 0.408  1.00 22.68 ? 105 HOH A O   1 
+HETATM 49 O O   . HOH B 2 . ? -6.146 -0.237 1.896  1.00 21.37 ? 106 HOH A O   1 
+HETATM 50 O O   . HOH B 2 . ? -3.213 -2.550 0.041  1.00 25.75 ? 107 HOH A O   1 
+# 

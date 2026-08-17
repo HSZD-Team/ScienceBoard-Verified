@@ -1,0 +1,23 @@
+{
+    "type": "Lean",
+    "sort": "Raw",
+    "steps": 50,
+    "penalty": "1:5",
+    "instruction": "theorem PT_1 {R : Sort u → Sort u → Prop} (h₁ : ∀ x, ∀ y, R x y → R y x) (h₂ : ∀ x, ∀ y, ∀ z, R x y ∧ R y z →  R x z) (h₃ : ∀ x, ∃ y, R x y) : ∀ x, R x x := by sorry",
+    "version": "0.1",
+    "initialize": [
+        {
+            "func": "import",
+            "libs": ["Mathlib"]
+        },
+        {
+            "func": "query",
+            "expr": "theorem PT_1 {R : Sort u → Sort u → Prop} (h₁ : ∀ x, ∀ y, R x y → R y x) (h₂ : ∀ x, ∀ y, ∀ z, R x y ∧ R y z →  R x z) (h₃ : ∀ x, ∃ y, R x y) : ∀ x, R x x := by sorry"
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "placeholder"
+        }
+    ]
+}

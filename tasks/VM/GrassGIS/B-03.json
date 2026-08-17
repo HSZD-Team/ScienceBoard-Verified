@@ -1,0 +1,42 @@
+{
+    "type": "GrassGIS",
+    "sort": "VM",
+    "steps": 5,
+    "instruction": "Display category number and topology information of the current map in Grass GIS.",
+    "version": "0.1",
+    "snapshot": "sci_bench",
+    "initialize": [
+        {
+            "func": "execute",
+            "command": "rm -rf /home/user/grassdata/*/*/.gislock",
+            "shell": true
+        },
+        {
+            "func": "launch",
+            "wait": 5,
+            "command": "gnome-terminal -- /bin/bash -ic \"FLASK_PORT=8000 grass --gui /home/user/grassdata/world_latlong_wgs84/PERMANENT\"",
+            "shell": true
+        },
+        {
+            "func": "map",
+            "grassdb": "/home/user/grassdata",
+            "location": "grassdata_piemonte_utm32n_wgs84_grass7",
+            "mapset": "PERMANENT"
+        },
+        {
+            "func": "layer",
+            "wait": 5,
+            "query": {
+                "name": "boundary_region"
+            }
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "info",
+            "key": "lambda dump: any([param.get('name') == 'display' and all([val in str(param.get('value', '')).split(',') for val in ['cat', 'topo']]) for win in dump.get('windows', []) if win.get('name') == 'boundary_region@PERMANENT' and win.get('_checked') is not False for data in (win.get('_data') or []) if isinstance(data, dict) for param in (data.get('params') or [])]) or any([isinstance(cmd, list) and len(cmd) > 1 and cmd[0] == 'd.vect' and ((isinstance(cmd[1], dict) and str(cmd[1].get('map', '')).startswith('boundary_region') and all([val in str(cmd[1].get('display', '')).split(',') for val in ['cat', 'topo']])) or (any([isinstance(part, str) and part.startswith('map=boundary_region') for part in cmd[1:]]) and any([isinstance(part, str) and part.startswith('display=') and all([val in part.split('=', 1)[1].split(',') for val in ['cat', 'topo']]) for part in cmd[1:]]))) for cmd in ([item.get('cmd') for item in dump.get('layers', []) if item.get('name') == 'boundary_region@PERMANENT' and item.get('hidden') is not True] + [data.get('cmd') for win in dump.get('windows', []) if win.get('name') == 'boundary_region@PERMANENT' and win.get('_checked') is not False for data in (win.get('_data') or []) if isinstance(data, dict)])])",
+            "value": true,
+            "pred": "lambda key, value: key == value"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "type": "Lean",
+    "sort": "Raw",
+    "steps": 50,
+    "penalty": "1:5",
+    "instruction": "theorem AP_2 (S : Set ℝ) (f f' : ℝ → ℝ) (hS : Convex ℝ S) (h₁ : ∀ x ∈ S, HasDerivWithinAt f (f' x) S x) (h₂ : ∃ M : ℝ, ∀ x ∈ S, |f' x| ≤ M) : UniformContinuousOn f S := by sorry",
+    "version": "0.1",
+    "initialize": [
+        {
+            "func": "import",
+            "libs": ["Mathlib"]
+        },
+        {
+            "func": "query",
+            "expr": "theorem AP_2 (S : Set ℝ) (f f' : ℝ → ℝ) (hS : Convex ℝ S) (h₁ : ∀ x ∈ S, HasDerivWithinAt f (f' x) S x) (h₂ : ∃ M : ℝ, ∀ x ∈ S, |f' x| ≤ M) : UniformContinuousOn f S := by sorry"
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "placeholder"
+        }
+    ]
+}

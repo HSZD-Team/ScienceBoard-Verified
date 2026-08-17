@@ -1,0 +1,23 @@
+{
+    "type": "Lean",
+    "sort": "Raw",
+    "steps": 50,
+    "penalty": "1:5",
+    "instruction": "theorem TP_5 [TopologicalSpace X] (A Y : Set X) (h₁ : IsCompact A) (h₂ : IsClosed Y) (h₃ : Y ⊆ A) : IsCompact Y := by sorry",
+    "version": "0.1",
+    "initialize": [
+        {
+            "func": "import",
+            "libs": ["Mathlib"]
+        },
+        {
+            "func": "query",
+            "expr": "theorem TP_5 [TopologicalSpace X] (A Y : Set X) (h₁ : IsCompact A) (h₂ : IsClosed Y) (h₃ : Y ⊆ A) : IsCompact Y := by sorry"
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "placeholder"
+        }
+    ]
+}

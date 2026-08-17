@@ -1,0 +1,23 @@
+{
+    "type": "Lean",
+    "sort": "Raw",
+    "steps": 50,
+    "penalty": "1:5",
+    "instruction": "theorem DM_1 {a p : ℕ} (h₁ : Nat.Prime p) (h₂ : Odd a) (h₃ : IsCoprime a p) : (a ^ (p - 1) + (p - 1) ^ a) ≡ 0 [ZMOD p] := by sorry",
+    "version": "0.1",
+    "initialize": [
+        {
+            "func": "import",
+            "libs": ["Mathlib"]
+        },
+        {
+            "func": "query",
+            "expr": "theorem DM_1 {a p : ℕ} (h₁ : Nat.Prime p) (h₂ : Odd a) (h₃ : IsCoprime a p) : (a ^ (p - 1) + (p - 1) ^ a) ≡ 0 [ZMOD p] := by sorry"
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "placeholder"
+        }
+    ]
+}

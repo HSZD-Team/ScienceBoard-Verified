@@ -1,0 +1,28 @@
+{
+    "type": "Lean",
+    "sort": "VM",
+    "steps": 20,
+    "instruction": "theorem DM_2 {V : Type*} {n e : ℕ} {G : SimpleGraph V} [Fintype V] [edge_fintype : Fintype G.edgeSet] [DecidableEq V] (h₁ : n = Fintype.card V ∧ e = Fintype.card G.edgeSet) (h₂ : ∀ v₁ : V, ∀ v₂ : V, v₁ ≠ v₂ → ∃ w : G.Walk v₁ v₂, w.IsHamiltonian) : n ≥ 4 → 2 * e ≥ 3 * n := by sorry",
+    "version": "0.1",
+    "initialize": [
+        {
+            "func": "import",
+            "libs": ["Mathlib"]
+        },
+        {
+            "func": "query",
+            "expr": "theorem DM_2 {V : Type*} {n e : ℕ} {G : SimpleGraph V} [Fintype V] [edge_fintype : Fintype G.edgeSet] [DecidableEq V] (h₁ : n = Fintype.card V ∧ e = Fintype.card G.edgeSet) (h₂ : ∀ v₁ : V, ∀ v₂ : V, v₁ ≠ v₂ → ∃ w : G.Walk v₁ v₂, w.IsHamiltonian) : n ≥ 4 → 2 * e ≥ 3 * n := by sorry"
+        },
+        {
+            "func": "launch",
+            "wait": 10,
+            "command": "code /home/user/sci /home/user/sci/Sci/Basic.lean",
+            "shell": true
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "placeholder"
+        }
+    ]
+}

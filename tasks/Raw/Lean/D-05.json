@@ -1,0 +1,27 @@
+{
+    "type": "Lean",
+    "sort": "Raw",
+    "steps": 50,
+    "penalty": "1:5",
+    "instruction": "theorem MT_2 [MeasurableSpace Ω] (μ_ : ℕ → Measure Ω) (f : Set Ω → ℝ≥0∞) (h₁ : ∀ n : ℕ, ∀ A : Set Ω, (μ_ n).measureOf A ≤ (μ_ (n + 1)).measureOf A) (h₂ : ∀ A : Set Ω, Tendsto (fun n => (μ_ n).measureOf A) atTop (𝓝 (f A))) : ∃ μ : Measure Ω, μ.measureOf = f := by sorry",
+    "version": "0.1",
+    "initialize": [
+        {
+            "func": "import",
+            "libs": ["Mathlib"]
+        },
+        {
+            "func": "open",
+            "libs": ["MeasureTheory", "ENNReal", "Filter", "Topology"]
+        },
+        {
+            "func": "query",
+            "expr": "theorem MT_2 [MeasurableSpace Ω] (μ_ : ℕ → Measure Ω) (f : Set Ω → ℝ≥0∞) (h₁ : ∀ n : ℕ, ∀ A : Set Ω, (μ_ n).measureOf A ≤ (μ_ (n + 1)).measureOf A) (h₂ : ∀ A : Set Ω, Tendsto (fun n => (μ_ n).measureOf A) atTop (𝓝 (f A))) : ∃ μ : Measure Ω, μ.measureOf = f := by sorry"
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "placeholder"
+        }
+    ]
+}

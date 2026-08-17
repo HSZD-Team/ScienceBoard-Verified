@@ -1,0 +1,42 @@
+{
+    "type": "GrassGIS",
+    "sort": "VM",
+    "steps": 5,
+    "instruction": "Perform univariate raster statistics on lake map in Grass GIS.",
+    "version": "0.1",
+    "snapshot": "sci_bench",
+    "initialize": [
+        {
+            "func": "execute",
+            "command": "rm -rf /home/user/grassdata/*/*/.gislock",
+            "shell": true
+        },
+        {
+            "func": "launch",
+            "wait": 5,
+            "command": "gnome-terminal -- /bin/bash -ic \"FLASK_PORT=8000 grass --gui /home/user/grassdata/world_latlong_wgs84/PERMANENT\"",
+            "shell": true
+        },
+        {
+            "func": "map",
+            "grassdb": "/home/user/grassdata",
+            "location": "grassdata_piemonte_utm32n_wgs84_grass7",
+            "mapset": "PERMANENT"
+        },
+        {
+            "func": "layer",
+            "wait": 5,
+            "query": {
+                "name": "boundary_region"
+            }
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "info",
+            "key": "lambda dump: (lambda out: ('n: 263975' in out) or (lambda frame: False if frame is None or 'self' not in frame.f_locals else (lambda self: (lambda at, img: ('frame name=\"r.univar\"' in at and 'lakes@PERMANENT' in at and 'page-tab name=\"Command output\"' in at and 'name=\"Command output\" st:enabled=\"true\" st:multi_line=\"true\" st:selectable=\"true\" st:selected=\"true\"' in at and (lambda m: bool(m) and (lambda x, y, w, h: sum([1 for r, g, b in img.crop((x, y, x + w, y + h)).convert('RGB').getdata() if r < 80 and g < 80 and b < 80]) > 1200)(*[int(v) for v in m.groups()]))(__import__('re').search('page-tab name=\"Command output\"[^>]*st:selected=\"true\"[^>]*>.*?<scroll-pane name=\"\"[^>]*cp:screencoord=\"[(]([0-9]+), ([0-9]+)[)]\" cp:size=\"[(]([0-9]+), ([0-9]+)[)]\"', at))))(self.manager.controller.get_accessibility_tree() or '', self.manager.screenshot()))(frame.f_locals['self']))(__import__('inspect').currentframe().f_back.f_back))(dump.get('output', '') or '')",
+            "value": true,
+            "pred": "lambda key, value: key == value"
+        }
+    ]
+}

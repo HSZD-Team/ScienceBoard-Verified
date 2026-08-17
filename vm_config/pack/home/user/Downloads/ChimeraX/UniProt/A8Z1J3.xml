@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="no" ?>
+<uniprot xmlns="http://uniprot.org/uniprot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uniprot.org/uniprot http://www.uniprot.org/docs/uniprot.xsd">
+<entry dataset="Swiss-Prot" created="2008-05-20" modified="2024-03-27" version="91" xmlns="http://uniprot.org/uniprot">
+  <accession>A8Z1J3</accession>
+  <name>DLTC_STAAT</name>
+  <protein>
+    <recommendedName>
+      <fullName evidence="1">D-alanyl carrier protein</fullName>
+      <shortName evidence="1">DCP</shortName>
+    </recommendedName>
+    <alternativeName>
+      <fullName evidence="1">D-alanine--poly(phosphoribitol) ligase subunit 2</fullName>
+    </alternativeName>
+  </protein>
+  <gene>
+    <name evidence="1" type="primary">dltC</name>
+    <name type="ordered locus">USA300HOU_0895</name>
+  </gene>
+  <organism>
+    <name type="scientific">Staphylococcus aureus (strain USA300 / TCH1516)</name>
+    <dbReference type="NCBI Taxonomy" id="451516"/>
+    <lineage>
+      <taxon>Bacteria</taxon>
+      <taxon>Bacillota</taxon>
+      <taxon>Bacilli</taxon>
+      <taxon>Bacillales</taxon>
+      <taxon>Staphylococcaceae</taxon>
+      <taxon>Staphylococcus</taxon>
+    </lineage>
+  </organism>
+  <reference key="1">
+    <citation type="journal article" date="2007" name="BMC Microbiol." volume="7" first="99" last="99">
+      <title>Subtle genetic changes enhance virulence of methicillin resistant and sensitive Staphylococcus aureus.</title>
+      <authorList>
+        <person name="Highlander S.K."/>
+        <person name="Hulten K.G."/>
+        <person name="Qin X."/>
+        <person name="Jiang H."/>
+        <person name="Yerrapragada S."/>
+        <person name="Mason E.O. Jr."/>
+        <person name="Shang Y."/>
+        <person name="Williams T.M."/>
+        <person name="Fortunov R.M."/>
+        <person name="Liu Y."/>
+        <person name="Igboeli O."/>
+        <person name="Petrosino J."/>
+        <person name="Tirumalai M."/>
+        <person name="Uzman A."/>
+        <person name="Fox G.E."/>
+        <person name="Cardenas A.M."/>
+        <person name="Muzny D.M."/>
+        <person name="Hemphill L."/>
+        <person name="Ding Y."/>
+        <person name="Dugan S."/>
+        <person name="Blyth P.R."/>
+        <person name="Buhay C.J."/>
+        <person name="Dinh H.H."/>
+        <person name="Hawes A.C."/>
+        <person name="Holder M."/>
+        <person name="Kovar C.L."/>
+        <person name="Lee S.L."/>
+        <person name="Liu W."/>
+        <person name="Nazareth L.V."/>
+        <person name="Wang Q."/>
+        <person name="Zhou J."/>
+        <person name="Kaplan S.L."/>
+        <person name="Weinstock G.M."/>
+      </authorList>
+      <dbReference type="PubMed" id="17986343"/>
+      <dbReference type="DOI" id="10.1186/1471-2180-7-99"/>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]</scope>
+    <source>
+      <strain>USA300 / TCH1516</strain>
+    </source>
+  </reference>
+  <comment type="function">
+    <text evidence="1">Carrier protein involved in the D-alanylation of lipoteichoic acid (LTA). The loading of thioester-linked D-alanine onto DltC is catalyzed by D-alanine--D-alanyl carrier protein ligase DltA. The DltC-carried D-alanyl group is further transferred to cell membrane phosphatidylglycerol (PG) by forming an ester bond, probably catalyzed by DltD. D-alanylation of LTA plays an important role in modulating the properties of the cell wall in Gram-positive bacteria, influencing the net charge of the cell wall.</text>
+  </comment>
+  <comment type="pathway">
+    <text evidence="1">Cell wall biogenesis; lipoteichoic acid biosynthesis.</text>
+  </comment>
+  <comment type="subcellular location">
+    <subcellularLocation>
+      <location evidence="1">Cytoplasm</location>
+    </subcellularLocation>
+  </comment>
+  <comment type="PTM">
+    <text evidence="1">4'-phosphopantetheine is transferred from CoA to a specific serine of apo-DCP.</text>
+  </comment>
+  <comment type="similarity">
+    <text evidence="1">Belongs to the DltC family.</text>
+  </comment>
+  <dbReference type="EMBL" id="CP000730">
+    <property type="protein sequence ID" value="ABX28916.1"/>
+    <property type="molecule type" value="Genomic_DNA"/>
+  </dbReference>
+  <dbReference type="RefSeq" id="WP_000395692.1">
+    <property type="nucleotide sequence ID" value="NC_010079.1"/>
+  </dbReference>
+  <dbReference type="AlphaFoldDB" id="A8Z1J3"/>
+  <dbReference type="SMR" id="A8Z1J3"/>
+  <dbReference type="GeneID" id="66839132"/>
+  <dbReference type="KEGG" id="sax:USA300HOU_0895"/>
+  <dbReference type="HOGENOM" id="CLU_108696_19_0_9"/>
+  <dbReference type="UniPathway" id="UPA00556"/>
+  <dbReference type="GO" id="GO:0005737">
+    <property type="term" value="C:cytoplasm"/>
+    <property type="evidence" value="ECO:0007669"/>
+    <property type="project" value="UniProtKB-SubCell"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0036370">
+    <property type="term" value="F:D-alanyl carrier activity"/>
+    <property type="evidence" value="ECO:0007669"/>
+    <property type="project" value="UniProtKB-UniRule"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0071555">
+    <property type="term" value="P:cell wall organization"/>
+    <property type="evidence" value="ECO:0007669"/>
+    <property type="project" value="UniProtKB-KW"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0070395">
+    <property type="term" value="P:lipoteichoic acid biosynthetic process"/>
+    <property type="evidence" value="ECO:0007669"/>
+    <property type="project" value="UniProtKB-UniRule"/>
+  </dbReference>
+  <dbReference type="Gene3D" id="1.10.1200.10">
+    <property type="entry name" value="ACP-like"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="HAMAP" id="MF_00565">
+    <property type="entry name" value="DltC"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR036736">
+    <property type="entry name" value="ACP-like_sf"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR003230">
+    <property type="entry name" value="DltC"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR009081">
+    <property type="entry name" value="PP-bd_ACP"/>
+  </dbReference>
+  <dbReference type="NCBIfam" id="TIGR01688">
+    <property type="entry name" value="dltC"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="Pfam" id="PF00550">
+    <property type="entry name" value="PP-binding"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="SUPFAM" id="SSF47336">
+    <property type="entry name" value="ACP-like"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="PROSITE" id="PS50075">
+    <property type="entry name" value="CARRIER"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <proteinExistence type="inferred from homology"/>
+  <keyword id="KW-0961">Cell wall biogenesis/degradation</keyword>
+  <keyword id="KW-0963">Cytoplasm</keyword>
+  <keyword id="KW-0596">Phosphopantetheine</keyword>
+  <keyword id="KW-0597">Phosphoprotein</keyword>
+  <feature type="chain" id="PRO_1000082309" description="D-alanyl carrier protein">
+    <location>
+      <begin position="1"/>
+      <end position="78"/>
+    </location>
+  </feature>
+  <feature type="domain" description="Carrier" evidence="1">
+    <location>
+      <begin position="1"/>
+      <end position="78"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="O-(pantetheine 4'-phosphoryl)serine" evidence="1">
+    <location>
+      <position position="36"/>
+    </location>
+  </feature>
+  <evidence type="ECO:0000255" key="1">
+    <source>
+      <dbReference type="HAMAP-Rule" id="MF_00565"/>
+    </source>
+  </evidence>
+  <sequence length="78" mass="9063" checksum="C001D1D3D189A584" modified="2008-01-15" version="1">MEFREQVLNLLAEVAENDIVKENPDVEIFEEGIIDSFQTVGLLLEIQNKLDIEVSIMDFDRDEWATPNKIVEALEELR</sequence>
+</entry>
+<copyright>
+Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms Distributed under the Creative Commons Attribution (CC BY 4.0) License
+</copyright>
+</uniprot>

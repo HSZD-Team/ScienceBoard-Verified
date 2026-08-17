@@ -1,0 +1,50 @@
+{
+    "type": "KAlgebra",
+    "sort": "VM",
+    "steps": 5,
+    "instruction": "Plot a sphere with diameter 2√2 and origin (0, 0, 0) in KAlgebra.",
+    "version": "0.1",
+    "snapshot": "sci_bench",
+    "initialize": [
+        {
+            "func": "launch",
+            "wait": 2.5,
+            "command": "LD_LIBRARY_PATH=/home/user/6.5.0/gcc_64/lib /app/bin/kalgebra «PORTLIKE»",
+            "shell": true
+        },
+        {
+            "func": "tab",
+            "index": 2
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "eqn",
+            "key": [
+                [1, 1, 0],
+                [1, 0, -1],
+                [0, -1, 1],
+                [0.5, -0.5, 1.224744871391589],
+                [-0.6, 0.8, -1],
+                [2, 2, 0],
+                [2, 0, -2],
+                [0, -2, 2],
+                [1, -1, 2.449489742783178],
+                [-2.6457513110645907, 1, 0]
+            ],
+            "value": {
+                "(1, 1, 0)": true,
+                "(1, 0, -1)": true,
+                "(0, -1, 1)": true,
+                "(0.5, -0.5, 1.224744871391589)": true,
+                "(-0.6, 0.8, -1)": true,
+                "(2, 2, 0)": false,
+                "(2, 0, -2)": false,
+                "(0, -2, 2)": false,
+                "(1, -1, 2.449489742783178)": false,
+                "(-2.6457513110645907, 1, 0)": false
+            }
+        }
+    ],
+    "ans": "x^2+y^2+z^2=2"
+}

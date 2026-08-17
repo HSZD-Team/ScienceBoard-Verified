@@ -1,0 +1,42 @@
+{
+    "type": "GrassGIS",
+    "sort": "VM",
+    "steps": 10,
+    "instruction": "Mark all and only all schools that are confirmed to be wheelchair accessible in Grass GIS.",
+    "version": "0.1",
+    "snapshot": "sci_bench",
+    "initialize": [
+        {
+            "func": "execute",
+            "command": "rm -rf /home/user/grassdata/*/*/.gislock",
+            "shell": true
+        },
+        {
+            "func": "launch",
+            "wait": 5,
+            "command": "gnome-terminal -- /bin/bash -ic \"FLASK_PORT=8000 grass --gui /home/user/grassdata/world_latlong_wgs84/PERMANENT\"",
+            "shell": true
+        },
+        {
+            "func": "map",
+            "grassdb": "/home/user/grassdata",
+            "location": "grassdata_piemonte_utm32n_wgs84_grass7",
+            "mapset": "PERMANENT"
+        },
+        {
+            "func": "layer",
+            "wait": 5,
+            "query": {
+                "name": "boundary_region"
+            }
+        }
+    ],
+    "evaluate": [
+        {
+            "type": "info",
+            "key": "lambda dump: (lambda good_where: any([param.get('name') == 'where' and good_where(param.get('value', '')) for win in dump.get('windows', []) if win.get('name') == 'schools@PERMANENT' and win.get('_checked') is not False for data in (win.get('_data') or []) if isinstance(data, dict) for param in (data.get('params') or [])]) or any([isinstance(cmd, list) and len(cmd) > 1 and cmd[0] == 'd.vect' and ((isinstance(cmd[1], dict) and str(cmd[1].get('map', '')).startswith('schools') and good_where(cmd[1].get('where', ''))) or (any([isinstance(part, str) and part.startswith('map=schools') for part in cmd[1:]]) and any([isinstance(part, str) and part.startswith('where=') and good_where(part.split('=', 1)[1]) for part in cmd[1:]]))) for cmd in ([item.get('cmd') for item in dump.get('layers', []) if item.get('name') == 'schools@PERMANENT' and item.get('hidden') is not True] + [data.get('cmd') for win in dump.get('windows', []) if win.get('name') == 'schools@PERMANENT' and win.get('_checked') is not False for data in (win.get('_data') or []) if isinstance(data, dict)])]))(lambda value: ''.join(str(value).split()) == \"wheelchair='yes'\")",
+            "value": true,
+            "pred": "lambda key, value: key == value"
+        }
+    ]
+}
